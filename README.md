@@ -25,7 +25,7 @@ Block and single-line comments are removed.
 
 example output of input.txt:
 ```
- ID LPAREN ID RPAREN`
+ ID LPAREN ID RPAREN
  LBRACE 
  IF LPAREN ID EQUAL INTCONSTANT RPAREN 
  LBRACE 
