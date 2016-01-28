@@ -1,0 +1,9 @@
+int fact(int n)
+{
+  if (n == 0)
+  {
+  return 1;
+  }
+  return fact(n - 1);
+}
+void main() {int x = 10;    printf("%d\n", fact(x));}
