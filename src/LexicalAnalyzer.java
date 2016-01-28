@@ -11,13 +11,17 @@ public class LexicalAnalyzer {
 
 
         //array of reserved words
-        String[] reserved = {"bool", "char", "else", "for", "if", "int", "printf", "return", "string", "void", "while", "true", "false"};
+        String[] reserved = {"bool", "char", "else", "for", "if", "int",
+                "printf", "return", "string", "void", "while", "true", "false"};
 
         //symbols
-        String[] symbols = {"\\+", "-", "\\*", "/", "%", "<", "<=", ">", ">=", "==", "!=", "=", ";", ",", "\\)", "\\(", "}", "\\{"};
+        String[] symbols = {"\\+", "-", "\\*", "/", "%", "<", "<=", ">",
+                ">=", "==", "!=", "=", ";", ",", "\\)", "\\(", "}", "\\{"};
 
         //corresponding tokens for each symbol
-        String[] symbol_strings = {"ADD", "SUB", "MUL", "DIV", "MOD", "LESS", "LESSEQUAL", "GREATER", "GREATEREQUAL", "EQUAL", "NOTEQUAL", "ASSIGN", "SEMICOLON", "COMMA", "RPAREN", "LPAREN", "RBRACE", "LBRACE"};
+        String[] symbol_strings = {"ADD", "SUB", "MUL", "DIV", "MOD", "LESS", "LESSEQUAL",
+                "GREATER", "GREATEREQUAL", "EQUAL", "NOTEQUAL", "ASSIGN", "SEMICOLON", "COMMA",
+                "RPAREN", "LPAREN", "RBRACE", "LBRACE"};
 
 
         /*
@@ -38,8 +42,9 @@ public class LexicalAnalyzer {
          * sequence of letters, digits, and underscores
          * must begin with letter
          */
-        String identifier = "(\\b(?!\\bSTRINGCONSTANT\\b|\\bbool\\b|\\bchar\\b|\\belse\\b|\\bfor\\b|\\bif\\b|\\bint\\b|\\bprintf\\b" +
-                "|\\breturn\\b|\\bstring\\b|\\bvoid\\b|\\bwhile\\b|\\btrue\\b|\\bfalse\\b))([a-zA-Z][_a-zA-Z0-9]*)";
+        String identifier = "(\\b(?!\\bSTRINGCONSTANT\\b|\\bbool\\b|\\bchar\\b|\\belse\\b|\\bfor\\b|" +
+                "\\bif\\b|\\bint\\b|\\bprintf\\b|\\breturn\\b|\\bstring\\b|\\bvoid\\b|\\bwhile\\b|" +
+                "\\btrue\\b|\\bfalse\\b))([a-zA-Z][_a-zA-Z0-9]*)";
 
 
         String filename = "input.txt";
