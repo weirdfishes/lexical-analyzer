@@ -16,6 +16,26 @@ lexical analyzer written in Java to tokenize a C-like language
 input file must be in the same directory as the java class, and must have the following syntax rules:
 see input.txt for sample syntax.
 
+```C
+//single line comment
+
+/* multiline comment
+line 2
+line 3
+*/
+int fact(int n)
+{
+  if (n == 0)
+  {
+  return 1;
+  }
+  return fact(n - 1);
+}
+void main() {
+int x = 0x0011;
+    printf("%d\n", fact(x));
+}
+```
 
 ### output
 
