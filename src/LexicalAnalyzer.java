@@ -47,7 +47,7 @@ public class LexicalAnalyzer {
                 "\\btrue\\b|\\bfalse\\b))([a-zA-Z][_a-zA-Z0-9]*)";
 
         String filename = "input.txt";
-        File file = new File(filename);
+        File file = new File(args[0]);
         Scanner fileScanner;
         Scanner blockCommentScanner;
         String input = "";
